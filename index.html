@@ -14,28 +14,26 @@
       <!--[if lte IE 9]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
       <![endif]-->
-      <div class="slideInDown">
             <!-- LOGO -->
             <header class="header">
-               <h2 class="logo">RAFADIZAINER</h2>
+               <h1 class="logo">RAFADIZAINER</h1>
             </header>
             <!-- WELCOME -->
-            <section class="rd-cover rd-bg-yellow">
+            <section class="rd-cover rd-bg-yellow slideInDown">
                <div class="container">
                   <div>
                       <div class="avatar">
                           <img src="images/rafadizainer.webp" alt="rafadizainer" loading="lazy"/>
                       </div>
-                     <h1>Olá, meu nome é Rafael Santos,</h1>
+                     <h2>Olá, meu nome é Rafael Santos,</h2>
                      <p>designer com mais de dez anos de experiência em produtos digitais, utilizando abordagens ágeis e design centrado no usuário. Atuo em todas as etapas do ciclo de vida do produto, desde a discovery até a implementação. Tenho experiência em planejamento estratégico e front-end, com foco na resolução de problemas.</p>
                </div>
          </section>
-      </div>
       
 <!--PROJECTS -->
       <section class="case">
          <div class="title">
-            <h1>Projetos</h1>
+            <h2>Projetos</h2>
          </div>
          <div class="container">
 
@@ -45,7 +43,7 @@
                   <div>
                      <img src="images/case-varejo.webp" alt="Case varejista" width="854" height="480" loading="lazy"/>
                      <div class="resume">
-                        <h2>Redes varejistas</h2>
+                        <h3>Redes varejistas</h3>
                         <p>A grande maioria das redes varejistas opera em meio ao caos, apagando incêndios diários. Precisamos desenvolver uma nova ferramenta para auxiliar na gestão operacional do varejo, com informações relevantes para a tomada de decisão no dia a dia.</p>
                      </div>
                   </div>
@@ -62,7 +60,7 @@
                   <div>
                      <img src="images/case-financeiro.webp" alt="Case financeiro" width="854" height="480" loading="lazy" />
                      <div class="resume">
-                        <h2>Instituição financeira</h2>
+                        <h3>Instituição financeira</h3>
                         <p>Dificuldade em encontrar informações, múltiplos sistemas e informações duplicadas. O Banco apresentava uma visão fragmentada do cliente, o que dificultava o atendimento e a qualidade dos serviços prestados.</p>
                      </div>
                   </div>
@@ -79,7 +77,7 @@
                   <div>
                      <img src="images/case-ensino.webp" alt="Case ensino" width="854" height="480" loading="lazy" />
                      <div class="resume">
-                        <h2>Instituição de ensino</h2>
+                        <h3>Instituição de ensino</h3>
                         <p>Em meio a pandemia de Covid-19 uma instituição de ensino precisa se adaptar para um “novo normal”. Aulas 100% online. Trazer todo o conteúdo e principalmente manter o método de uma das principais escolas de inglês do Brasil.</p>
                      </div>
                   </div>
@@ -96,7 +94,7 @@
                   <div>
                      <img src="images/design-interface.webp" alt="Design de interface" width="854" height="480" loading="lazy"/>
                      <div class="resume">
-                        <h2>Dar vida as ideias</h2>
+                        <h3>Dar vida as ideias</h3>
                         <p>Design de interface e interação para tornar o caminho do usuário mais claro e garantir que a interface seja intuitiva e fácil de usar.</p>
                      </div>
                   </div>
@@ -115,7 +113,7 @@
       <section class="contact rd-cover rd-bg-yellow">
          <div class="container">
             <div class="resume">
-               <h1>Bora conversar?</h1>
+               <h4>Bora conversar?</h4>
                <ul class="callme">
                   <li>
                      <img src="images/ico-cel.png" alt="Me liga" width="32" height="32" loading="lazy"/>
@@ -198,6 +196,9 @@
         h1{
         font-size:var(--rd-r3)
         }
+        h2, h3, h4{
+        font-size:var(--rd-r2)
+        }
         .case .title,.header .logo,.rd-cover,footer{
         text-align:center
         }
@@ -244,9 +245,6 @@
         .header .logo{
         display:block;
         padding:var(--rd-r1)
-        }
-        .header .logo,h2{
-        font-size:var(--rd-r2)
         }
 
         /*LAYOUT*/
@@ -335,15 +333,18 @@
         }
 
         /*RESPONSIVE*/
-        @media (max-width:62em){
+        @media (max-width:62em){ /*992px*/
            .card .resume,.container{
                padding:var(--rd-r1)
            }
-           body,h2{
+           body,h2, h3, h4{
                font-size:var(--rd-r1)
            }
-           h1{
+           h2, h3, h4{
                font-size:var(--rd-r2)
+           }
+           h1{
+               font-size:var(--rd-r3)
            }
            .container{
                display:block
