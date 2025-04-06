@@ -3,12 +3,17 @@
    <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta http-equiv="cache-control" content="max-age:31536000" />
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="default-style" content="text/css">
+      <meta name="theme-color" content="#ffd60a">
+      <meta name="referrer" content="origin">
       <meta name="description" content="Designer com mais de 10 anos de experiência na criação de produtos digitais, atuando em todas as etapas do desenvolvimento, desde a definição do problema até o lançamento da solução">
       <meta name="keywords" content="Product Designer, Service Design, UX Research, UX Designer, UI Designer">
       <meta name="author" content="RAFADIZAINER">
       <title>RAFADIZAINER</title>
+      <style>
+            :root{--rd-black:#252526; --rd-yellow:#ffd60a; --rd-white:#fffafa; --rd-r3:3rem; --rd-r2:2rem; --rd-r1:1rem; --rd-r0:0.5rem } *{-webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; -ms-box-sizing:border-box; box-sizing:border-box; margin:0 } ul{margin:0 } ul,ul li{list-style:none; padding:0 } body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; font-weight:400; font-style:normal; font-size: large; line-height: 1.5; color:var(--rd-white); background:var(--rd-black); overflow-x:hidden; margin:0 auto } .about li:before,.button a,.header .logo,.rd-bg-white,.rd-bg-yellow{color:var(--rd-black) } a,a:active,a:focus,a:hover,a:visited{text-decoration:none; border:none; margin:0; color:var(--rd-black) } h1, h2, h3, h4{margin:0; padding-top:var(--rd-r1); padding-bottom:var(--rd-r1); font-weight:700; } h1{font-size:xxx-large; } h2{font-size: xx-large; } h3{font-size: x-large; } .case .title,.header .logo,.rd-cover,footer{text-align:center } img{border:none; width:100%; height:auto } button,input,select,textarea{box-shadow:none; outline:0!important } button{background:0 0; border:0 } .button{padding:var(--rd-r1); display:inline-block } .button a{cursor:pointer } footer{padding:var(--rd-r2) } [placeholder]:focus::-webkit-input-placeholder{-webkit-transition:opacity 0.3s 0.3s; -moz-transition:opacity 0.3s 0.3s; -ms-transition:opacity 0.3s 0.3s; -o-transition:opacity 0.3s 0.3s; transition:opacity 0.3s 0.3s; opacity:0 } /*HEADER*/ .header{background-color:var(--rd-white); width:100%; } .button,.rd-bg-yellow{background-color:var(--rd-yellow) } .header .logo{display:block; padding:var(--rd-r1) } /*LAYOUT*/ .container{max-width:87.5em; margin:auto; padding:var(--rd-r3) } .col{float:left; width:50%; padding:var(--rd-r0); height:inherit } .container:after{content:""; display:table; clear:both } /*CASE*/ .resume{padding:var(--rd-r1); } .card{display:flex; flex-wrap:wrap; align-content:space-between } .case img{border-radius:var(--rd-r0) var(--rd-r0) 0 0 } .case p{height:7.5em } .about img,.button,.case .card{border-radius:var(--rd-r0) } /*FOOTER*/ .callme{text-align:left; line-height:var(--rd-r3) } .callme a{text-decoration:underline; padding-left:var(--rd-r1) } .callme a:hover{text-decoration:none } .callme img{width:var(--rd-r2); height:var(--rd-r2); vertical-align:middle } /*COVER*/ .rd-cover{display:flex; align-items:center; justify-content:center; height:100vh } .rd-cover:before{position:absolute; content:" "; top:0; left:0; width:100%; height:100% } .rd-bg-white{background-color:var(--rd-white) } .avatar img{max-width: 25em; width: 60%; height: 60%; } /*RESPONSIVE*/ @media (max-width:62em){/*992px*/ .card .resume,.container{padding:var(--rd-r1) } body, h3{font-size: medium; } h1{font-size: x-large; } h2{font-size: large; } .container{display:block } .rd-cover{height: auto; min-height: 40em; padding:var(--rd-r2) } .col,.resume{padding:0 } .col{float:none; width:100% } .case .title{padding-top:var(--rd-r1) } .case .col{padding-bottom:var(--rd-r1) } .case p{height:auto } } /*ANIME*/ .slideInDown{-webkit-animation-name:slideInDown; animation-name:slideInDown; -webkit-animation-duration:1s; animation-duration:1s; -webkit-animation-fill-mode:both; animation-fill-mode:both } @-webkit-keyframes slideInDown{0%{-webkit-transform:translateY(-100%); transform:translateY(-100%); visibility:visible } 100%{-webkit-transform:translateY(0); transform:translateY(0) } } @keyframes slideInDown{0%{-webkit-transform:translateY(-100%); transform:translateY(-100%); visibility:visible } 100%{-webkit-transform:translateY(0); transform:translateY(0) } }
+      </style>
    </head>
    <body>
    <!--[if lte IE 9]>
@@ -20,129 +25,118 @@
       <h1 class="logo">RAFADIZAINER</h1>
 
       <!-- WELCOME -->
-      <section class="rd-cover rd-bg-yellow">
-         <div class="container">
-             <ul>
-               <li class="avatar"><img src="images/rafadizainer.webp" alt="rafadizainer" loading="lazy"/></li>
-               <li><h2>Olá, meu nome é Rafael Santos,</h2></li>
-               <li><p>designer com mais de dez anos de experiência em produtos digitais, utilizando abordagens ágeis e design centrado no usuário. Atuo em todas as etapas do ciclo de vida do produto, desde a discovery até a implementação. Tenho experiência em planejamento estratégico e front-end, com foco na resolução de problemas.</p></li>
-            </ul>
+         <div class="rd-cover rd-bg-yellow">
+            <article class="container">
+               <figure class="avatar">
+                  <img src="images/rafadizainer.webp" alt="rafadizainer" loading="lazy">
+               </figure>
+               <h2>Olá, meu nome é Rafael Santos,</h2>
+               <p>designer com mais de dez anos de experiência em produtos digitais, utilizando abordagens ágeis e design centrado no usuário. Atuo em todas as etapas do ciclo de vida do produto, desde a discovery até a implementação. Tenho experiência em planejamento estratégico e front-end, com foco na resolução de problemas.</p>
+            </article>
          </div>
-      </section>
 
    </header>
       
 <!--PROJECTS -->
-   <main>
-      <section class="case">
+   <main class="case">
+      <div class="container">
 
          <h2 class="title">Projetos</h2>
 
-         <div class="container">
-
           <!--CASE 01 -->
-            <article class="col">
-               <a href="https://bit.ly/case-varejista" target="_blank">
-                  <div class="card rd-bg-white">
-                     <img src="images/case-varejo.webp" alt="Case varejista" width="854" height="480" loading="lazy"/>
-                        <ul class="resume">
-                           <li><h3>Redes varejistas</h3></li>
-                           <li><p>A grande maioria das redes varejistas opera em meio ao caos, apagando incêndios diários. Precisamos desenvolver uma nova ferramenta para auxiliar na gestão operacional do varejo, com informações relevantes para a tomada de decisão no dia a dia.</p></li>
-                        </ul>
-                     <ul class="resume">
-                       <li class="button">Conheça o projeto</li>
-                     </ul>
-                  </div>
-               </a>
-            </article>
+               <div class="col">
+                  <a href="https://bit.ly/case-varejista" target="_blank">
+                     <article class="card rd-bg-white">
+                        <figure>
+                           <img src="images/case-varejo.webp" alt="Case varejista" width="854" height="480" loading="lazy">
+                        </figure>
+                           <ul class="resume">
+                              <li><h3>Redes varejistas</h3></li>
+                              <li><p>A grande maioria das redes varejistas opera em meio ao caos, apagando incêndios diários. Precisamos desenvolver uma nova ferramenta para auxiliar na gestão operacional do varejo, com informações relevantes para a tomada de decisão no dia a dia.</p></li>
+                              <li class="button">Conheça o projeto</li>
+                           </ul>
+                     </article>
+                  </a>
+               </div>
 
             <!--CASE 02 -->
-            <article class="col">
-               <a href="https://bit.ly/case-financeiro" target="_blank">
-                  <div class="card rd-bg-white">
-                        <img src="images/case-financeiro.webp" alt="Case financeiro" width="854" height="480" loading="lazy" />
-                        <ul class="resume">
-                           <li><h3>Instituição financeira</h3></li>
-                           <li><p>Dificuldade em encontrar informações, múltiplos sistemas e informações duplicadas. O Banco apresentava uma visão fragmentada do cliente, o que dificultava o atendimento e a qualidade dos serviços prestados.</p></li>
-                        </ul>
-                     <ul class="resume">
-                        <li class="button">Conheça o projeto</li>
-                     </ul>
-                  </div>
-               </a>
-            </article>
+               <div class="col">
+                  <a href="https://bit.ly/case-financeiro" target="_blank">
+                     <article class="card rd-bg-white">
+                           <figure>
+                              <img src="images/case-financeiro.webp" alt="Case financeiro" width="854" height="480" loading="lazy">
+                           </figure>
+                           <ul class="resume">
+                              <li><h3>Instituição financeira</h3></li>
+                              <li><p>Dificuldade em encontrar informações, múltiplos sistemas e informações duplicadas. O Banco apresentava uma visão fragmentada do cliente, o que dificultava o atendimento e a qualidade dos serviços prestados.</p></li>
+                              <li class="button">Conheça o projeto</li>
+                           </ul>
+                     </article>
+                  </a>
+               </div>
 
             <!--CASE 03 -->
-            <article class="col">
-               <a href="https://bit.ly/case-ensino" target="_blank">
-                  <div class="card rd-bg-white">
-                        <img src="images/case-ensino.webp" alt="Case ensino" width="854" height="480" loading="lazy" />
-                        <ul class="resume">
-                           <li><h3>Instituição de ensino</h3></li>
-                           <li><p>Em meio a pandemia de Covid-19 uma instituição de ensino precisa se adaptar para um “novo normal”. Aulas 100% online. Trazer todo o conteúdo e principalmente manter o método de uma das principais escolas de inglês do Brasil.</p><li>
-                     </ul>
-                     <ul class="resume">
-                        <li class="button">Conheça o projeto</li>
-                     </ul>
-                  </div>
-               </a>
-            </article>
+               <div class="col">
+                  <a href="https://bit.ly/case-ensino" target="_blank">
+                     <article class="card rd-bg-white">
+                           <figure>
+                              <img src="images/case-ensino.webp" alt="Case ensino" width="854" height="480" loading="lazy">
+                           </figure>
+                           <ul class="resume">
+                              <li><h3>Instituição de ensino</h3></li>
+                              <li><p>Em meio a pandemia de Covid-19 uma instituição de ensino precisa se adaptar para um “novo normal”. Aulas 100% online. Trazer todo o conteúdo e principalmente manter o método de uma das principais escolas de inglês do Brasil.</p><li>
+                              <li class="button">Conheça o projeto</li>
+                        </ul>
+                     </article>
+                  </a>
+               </div>
             
             <!--CASE 04 -->
-            <article class="col">
-               <a href="https://bit.ly/rd-ui" target="_blank">
-                  <div class="card rd-bg-white">
-                        <img src="images/design-interface.webp" alt="Design de interface" width="854" height="480" loading="lazy"/>
-                        <ul class="resume">
-                           <li><h3>Dar vida as ideias</h3></li>
-                           <li><p>Design de interface e interação para tornar o caminho do usuário mais claro e garantir que a interface seja intuitiva e fácil de usar.</p></li>
-                        </ul>
-                     <ul class="resume">
-                       <li class="button">Conheça o projeto</li>
-                     </ul>
-                  </div>
-               </a>
-            </article>
+               <div class="col">
+                  <a href="https://bit.ly/rd-ui" target="_blank">
+                     <article class="card rd-bg-white">
+                           <figure>
+                              <img src="images/design-interface.webp" alt="Design de interface" width="854" height="480" loading="lazy">
+                           </figure>
+                           <ul class="resume">
+                              <li><h3>Dar vida as ideias</h3></li>
+                              <li><p>Design de interface e interação para tornar o caminho do usuário mais claro e garantir que a interface seja intuitiva e fácil de usar.</p></li>
+                              <li class="button">Conheça o projeto</li>
+                           </ul>
+                     </article>
+                  </a>
+               </div>
 
-         </div>
-      </section>
+      </div>
    </main>
       
-      <!--CONTACT -->
-      <aside class="contact rd-cover rd-bg-yellow">
-         <div class="container">
-            <div class="resume">
-               <h2>Bora conversar?</h2>
-               <ul class="callme">
-                  <li>
-                     <img src="images/ico-cel.png" alt="Me liga" width="32" height="32" loading="lazy"/>
-                     <a href="https://wa.me/5511971712720" target="_blank">(11) 97171-2720</a>
-                  </li>
-                  <li>
-                     <img src="images/ico-email.png" alt="E-mail" width="32" height="32" loading="lazy"/>
-                     <a href="mailto:fale.rafael@gmail.com" target="_blank">fale.rafael@gmail.com</a>
-                  </li>
-                  <li>
-                     <img src="images/ico-in.png" alt="Me segue" width="32" height="32" loading="lazy" />
-                     <a href="https://www.linkedin.com/in/rafael-santos-dizainer" target="_blank">Linkedin</a>
-                  </li>
-                  <li>
-                     <img src="images/ico-cv.png" alt="CV" width="32" height="32" loading="lazy"/>
-                     <a href="https://bit.ly/rd-cv-rafael-santos" target="_blank">Baixar currículo</a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </aside>
+   <!--CONTACT -->
+   <nav class="contact rd-cover rd-bg-yellow">
+      <ul class="callme resume">
+         <li><h2>Bora conversar?</h2></li>
+         <li>
+            <img src="images/ico-cel.png" alt="Me liga" width="32" height="32" loading="lazy">
+            <a href="https://wa.me/5511971712720" target="_blank">(11) 97171-2720</a>
+         </li>
+         <li>
+            <img src="images/ico-email.png" alt="E-mail" width="32" height="32" loading="lazy">
+            <a href="mailto:fale.rafael@gmail.com" target="_blank">fale.rafael@gmail.com</a>
+         </li>
+         <li>
+            <img src="images/ico-in.png" alt="Me segue" width="32" height="32" loading="lazy">
+            <a href="https://www.linkedin.com/in/rafael-santos-dizainer" target="_blank">Linkedin</a>
+         </li>
+         <li>
+            <img src="images/ico-cv.png" alt="CV" width="32" height="32" loading="lazy">
+            <a href="https://bit.ly/rd-cv-rafael-santos" target="_blank">Baixar currículo</a>
+         </li>
+      </ul>
+   </nav>
 
-      <!--FOOTER -->
-      <footer class="rd-black">
-         <p>Desenvolvido e criador por: RAFADIZAINER</p>
-      </footer>
+   <!--FOOTER -->
+   <footer class="rd-black">
+      <small>Desenvolvido e criador por: RAFADIZAINER</small>
+   </footer>  
       
-      <style>
-        :root{--rd-black:#252526; --rd-yellow:#ffd60a; --rd-white:#fffafa; --rd-r3:3rem; --rd-r2:2rem; --rd-r1:1rem; --rd-r0:0.5rem } *{-webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; -ms-box-sizing:border-box; box-sizing:border-box; margin:0 } ul{margin:0 } ul,ul li{list-style:none; padding:0 } body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; font-optical-sizing:auto; font-weight:400; font-style:normal; font-size: large; line-height: 1.5; color:var(--rd-white); background:var(--rd-black); overflow-x:hidden; margin:0 auto } .about li:before,.button a,.header .logo,.rd-bg-white,.rd-bg-yellow{color:var(--rd-black) } a,a:active,a:focus,a:hover,a:visited{text-decoration:none; boder:none; margin:0; color:var(--rd-black) } h1, h2, h3, h4{margin:0; padding-top:var(--rd-r1); padding-bottom:var(--rd-r1); font-weight:700; } h1{font-size:xxx-large; } h2, h3, h4{font-size: xx-large; } .case .title,.header .logo,.rd-cover,footer{text-align:center } img{border:none; width:100%; height:auto } button,input,select,textarea{box-shadow:none; outline:0!important } button{background:0 0; border:0 } .button{padding:var(--rd-r1); display:inline-block } .button a{cursor:pointer } footer{padding:var(--rd-r2) } [placeholder]:focus::-webkit-input-placeholder{-webkit-transition:opacity 0.3s 0.3s; -moz-transition:opacity 0.3s 0.3s; -ms-transition:opacity 0.3s 0.3s; -o-transition:opacity 0.3s 0.3s; transition:opacity 0.3s 0.3s; opacity:0 } /*HEADER*/ .header{background-color:var(--rd-white); width:100%; } .button,.rd-bg-yellow{background-color:var(--rd-yellow) } .header .logo{display:block; padding:var(--rd-r1) } /*LAYOUT*/ .container{max-width:87.5em; margin:auto; padding:var(--rd-r3) } .col{float:left; width:50%; padding:var(--rd-r0); height:inherit } .container:after{content:""; display:table; clear:both } /*CASE*/ .case .resume{padding:var(--rd-r1); } .case .title{width:100%; padding-top:var(--rd-r3) } .case .card{display:flex; flex-wrap:wrap; align-content:space-between } .case img{border-radius:var(--rd-r0) var(--rd-r0) 0 0 } .case p{height:7em } .about img,.button,.case .card{border-radius:var(--rd-r0) } /*FOOTER*/ .callme{text-align:left; line-height:var(--rd-r3) } .callme a{text-decoration:underline; padding-left:var(--rd-r1) } .callme a:hover{text-decoration:none } .callme img{width:var(--rd-r2); height:var(--rd-r2); vertical-align:middle } /*COVER*/ .rd-cover{display:flex; align-items:center; justify-content:center; height:100vh } .rd-cover:before{position:absolute; content:" "; top:0; left:0; width:100%; height:100% } .rd-bg-white{background-color:var(--rd-white) } .avatar img{max-width: 25em; width: 60%; height: 60%; } /*RESPONSIVE*/ @media (max-width:62em){ /*992px*/ .card .resume,.container{padding:var(--rd-r1) } body{font-size: medium; } h1, h2, h3, h4{font-size: large; } .container{display:block } .rd-cover{height: auto; min-height: 40em; padding:var(--rd-r2) } .col,.resume{padding:0 } .col{float:none; width:100% } .case .title{padding-top:var(--rd-r1) } .case .col{padding-bottom:var(--rd-r1) } .case p{height:auto } } /*ANIME*/ .slideInDown{-webkit-animation-name:slideInDown; animation-name:slideInDown; -webkit-animation-duration:1s; animation-duration:1s; -webkit-animation-fill-mode:both; animation-fill-mode:both } @-webkit-keyframes slideInDown{0%{-webkit-transform:translateY(-100%); transform:translateY(-100%); visibility:visible } 100%{-webkit-transform:translateY(0); transform:translateY(0) } } @keyframes slideInDown{0%{-webkit-transform:translateY(-100%); transform:translateY(-100%); visibility:visible } 100%{-webkit-transform:translateY(0); transform:translateY(0) } }
-        </style>
-      <!--THAT'S ALL FOLKS -->   
    </body>
 </html>
