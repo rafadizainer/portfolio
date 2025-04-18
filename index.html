@@ -12,7 +12,7 @@
       <meta name="author" content="RAFADIZAINER">
       <title>RAFADIZAINER</title>
       <style>
-               :root {--rd-black: #252526; --rd-yellow: #ffd60a; --rd-white: #fffafa; --rd-r3: 3rem; --rd-r2: 2rem; --rd-r1: 1rem; --rd-r0: 0.5rem; } * {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; margin: 0; } ul {margin: 0; } ul, ul li {list-style: none; padding: 0; } body {font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; font-weight: 400; font-style: normal; font-size: large; line-height: 1.5; color: var(--rd-white); background: var(--rd-black); overflow-x: hidden; margin: 0 auto; } .about li:before, .button a, .header .logo, .rd-bg-white, .rd-bg-yellow {color: var(--rd-black); } a, a:active, a:focus, a:hover, a:visited {text-decoration: none; border: none; margin: 0; color: var(--rd-black); } h1, h2, h3, .logo {margin: 0; padding-top: var(--rd-r1); padding-bottom: var(--rd-r1); font-weight: 700; } h1, .logo {font-size: xxx-large; } h2 {font-size: xx-large; } h3 {font-size: x-large; } .case .title, .header .logo, .rd-cover, footer {text-align: center; } img {border: none; width: 100%; height: auto; } button, input, select, textarea {box-shadow: none; outline: 0 !important; } button {background: 0 0; border: 0; } .button {padding: var(--rd-r1); display: inline-block; } .button a {cursor: pointer; } footer {padding: var(--rd-r2); } [placeholder]:focus::-webkit-input-placeholder {-webkit-transition: opacity 0.3s 0.3s; -moz-transition: opacity 0.3s 0.3s; -ms-transition: opacity 0.3s 0.3s; -o-transition: opacity 0.3s 0.3s; transition: opacity 0.3s 0.3s; opacity: 0; } /*HEADER*/ .header {background-color: var(--rd-white); width: 100%; } .button, .rd-bg-yellow {background-color: var(--rd-yellow); } .logo {display: block; padding: var(--rd-r1); } /*LAYOUT*/ .container {max-width: 87.5em; margin: auto; padding: var(--rd-r3); } .col {float: left; width: 50%; padding: var(--rd-r0); height: inherit; } .container:after {content: ""; display: table; clear: both; } /*CASE*/ .resume {padding: var(--rd-r1); } .card {display: flex; flex-wrap: wrap; align-content: space-between; } .case img {border-radius: var(--rd-r0) var(--rd-r0) 0 0; } .case p {height: 7.5em; } .about img, .button, .case .card {border-radius: var(--rd-r0); } /*FOOTER*/ .callme {text-align: left; line-height: var(--rd-r3); } .callme a {text-decoration: underline; padding-left: var(--rd-r1); } .callme a:hover {text-decoration: none; } .callme img {width: var(--rd-r2); height: var(--rd-r2); vertical-align: middle; } /*COVER*/ .rd-cover {display: flex; align-items: center; justify-content: center; height: 100vh; } .rd-cover:before {position: absolute; content: " "; top: 0; left: 0; width: 100%; height: 100%; } .rd-bg-white {background-color: var(--rd-white); } .avatar img {max-width: 25em; width: 60%; height: 60%; } /*RESPONSIVE*/ @media (max-width: 62em) {/*992px*/ .card .resume, .container {padding: var(--rd-r1); } body, h3 {font-size: medium; } h1, .logo {font-size: x-large; } h2 {font-size: large; } .container {display: block; } .rd-cover {height: auto; min-height: 40em; padding: var(--rd-r2); } .col, .resume {padding: 0; } .col {float: none; width: 100%; } .case .title {padding-top: var(--rd-r1); } .case .col {padding-bottom: var(--rd-r1); } .case p {height: auto; margin-bottom: var(--rd-r1); } } /*ANIME*/ .slideInDown {-webkit-animation-name: slideInDown; animation-name: slideInDown; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; } @-webkit-keyframes slideInDown {0% {-webkit-transform: translateY(-100%); transform: translateY(-100%); visibility: visible; } 100% {-webkit-transform: translateY(0); transform: translateY(0); } } @keyframes slideInDown {0% {-webkit-transform: translateY(-100%); transform: translateY(-100%); visibility: visible; } 100% {-webkit-transform: translateY(0); transform: translateY(0); } }
+               :root {--rd-black: #252526; --rd-yellow: #ffd60a; --rd-white: #fffafa; --rd-r3: 3rem; --rd-r2: 2rem; --rd-r1: 1rem; --rd-r0: 0.5rem; } * {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; margin: 0; } ul {margin: 0; } ul, ul li {list-style: none; padding: 0; } body {font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; font-weight: 400; font-style: normal; font-size: large; line-height: 1.5; color: var(--rd-white); background: var(--rd-black); overflow-x: hidden; margin: 0 auto; } .about li:before, .button a, .header .logo, .rd-bg-white, .rd-bg-yellow {color: var(--rd-black); } a, a:active, a:focus, a:hover, a:visited {text-decoration: none; border: none; margin: 0; color: var(--rd-black); } h1, h2, h3, .logo, .card-title {margin: 0; padding-top: var(--rd-r1); padding-bottom: var(--rd-r1); font-weight: 700; } h1, .logo {font-size: xxx-large; } h2 {font-size: xx-large; } .case-title, .header .logo, .rd-cover, footer {text-align: center; } img {border: none; width: 100%; height: auto; } button, input, select, textarea {box-shadow: none; outline: 0 !important; } button {background: 0 0; border: 0; } .button {padding: var(--rd-r1); display: inline-block; } .button a {cursor: pointer; } footer {padding: var(--rd-r2); } [placeholder]:focus::-webkit-input-placeholder {-webkit-transition: opacity 0.3s 0.3s; -moz-transition: opacity 0.3s 0.3s; -ms-transition: opacity 0.3s 0.3s; -o-transition: opacity 0.3s 0.3s; transition: opacity 0.3s 0.3s; opacity: 0; } /*HEADER*/ .header {background-color: var(--rd-white); width: 100%; } .button, .rd-bg-yellow {background-color: var(--rd-yellow); } .logo {display: block; padding: var(--rd-r1); } /*LAYOUT*/ .container {max-width: 87.5em; margin: auto; padding: var(--rd-r3); } .col {float: left; width: 50%; padding: var(--rd-r0); height: inherit; } .container:after {content: ""; display: table; clear: both; } /*CASE*/ .card {display: flex; flex-wrap: wrap; align-content: space-between; } .card-resume {padding: var(--rd-r1); } .card-info {height: 7.5em; } .card-title{font-size: x-large; } .case img {border-radius: var(--rd-r0) var(--rd-r0) 0 0; } .about img, .button, .case .card {border-radius: var(--rd-r0); } /*FOOTER*/ .callme {text-align: left; line-height: var(--rd-r3); } .callme a {text-decoration: underline; padding-left: var(--rd-r1); } .callme a:hover {text-decoration: none; } .callme img {width: var(--rd-r2); height: var(--rd-r2); vertical-align: middle; } /*COVER*/ .rd-cover {display: flex; align-items: center; justify-content: center; height: 100vh; } .rd-cover:before {position: absolute; content: " "; top: 0; left: 0; width: 100%; height: 100%; } .rd-bg-white {background-color: var(--rd-white); } .avatar img {max-width: 25em; width: 60%; height: 60%; } /*RESPONSIVE*/ @media (max-width: 62em) {/*992px*/ .card .card-resume, .container {padding: var(--rd-r1); } body, .card-title {font-size: medium; } h1, .logo {font-size: x-large; } h2 {font-size: large; } .container {display: block; } .col {float: none; width: 100%; } .rd-cover {height: auto; min-height: 40em; padding: var(--rd-r2); } .col, .card-resume {padding: 0; } .card-info {height: auto; margin-bottom: var(--rd-r1); } .case-title {padding-top: var(--rd-r1); } .case .col {padding-bottom: var(--rd-r1); } } /*ANIME*/ .slideInDown {-webkit-animation-name: slideInDown; animation-name: slideInDown; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; } @-webkit-keyframes slideInDown {0% {-webkit-transform: translateY(-100%); transform: translateY(-100%); visibility: visible; } 100% {-webkit-transform: translateY(0); transform: translateY(0); } } @keyframes slideInDown {0% {-webkit-transform: translateY(-100%); transform: translateY(-100%); visibility: visible; } 100% {-webkit-transform: translateY(0); transform: translateY(0); } }
       </style>
    </head>
    <body>
@@ -20,15 +20,16 @@
    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
    <![endif]-->
 
+
    <header class="header slideInDown">
       <!-- LOGO -->
-      <a href="https:/rafadizainer.github.io/portfolio" target="_self" class="logo">RAFADIZAINER</a>
+      <a href="https://rafadizainer.github.io/portfolio" target="_self" class="logo">RAFADIZAINER</a>
 
       <!-- WELCOME -->
          <div class="rd-cover rd-bg-yellow">
             <article class="container">
                <figure class="avatar">
-                  <img src="images/rafadizainer.webp" alt="A imagem é um retrato em preto e branco. Tenho cabelos cacheados e barba" loading="lazy">
+                  <img src="images/rafadizainer.webp" alt="A imagem é um retrato em preto e branco, estou usando óculos e sorrindo." loading="lazy">
                </figure>
                <h1>Olá, meu nome é Rafael Santos,</h1>
                <p>designer com mais de dez anos de experiência em produtos digitais, utilizando abordagens ágeis e design centrado no usuário. Atuo em todas as etapas do ciclo de vida do produto, desde a discovery até a implementação. Tenho experiência em planejamento estratégico e front-end, com foco na resolução de problemas.</p>
@@ -39,91 +40,93 @@
       
 <!--PROJECTS -->
    <main class="case">
-      <div class="container">
+      <article class="container">
 
-         <h2 class="title">Projetos</h2>
+         <h2 class="case-title">Projetos</h2>
 
           <!--CASE 01 -->
                <div class="col">
-                     <article class="card rd-bg-white">
+                     <div class="card rd-bg-white">
                         <figure>
                            <img src="images/case-varejo.webp" alt="A imagem mostra a tela de login de um aplicativo chamado 'APP Repositor'" width="854" height="480" loading="lazy">
                         </figure>
-                           <ul class="resume">
-                              <li><h3>Redes varejistas</h3></li>
-                              <li><p>A grande maioria das redes varejistas opera em meio ao caos, apagando incêndios diários. Precisamos desenvolver uma nova ferramenta para auxiliar na gestão operacional do varejo, com informações relevantes para a tomada de decisão no dia a dia.</p></li>
-                              <li class="button"><a href="https://bit.ly/case-varejista" target="_blank">Conheça o projeto varejista</a></li>
-                           </ul>
-                     </article>
+                           <dl class="card-resume">
+                              <dt class="card-title">Redes varejistas</dt>
+                              <dd class="card-info">A grande maioria das redes varejistas opera em meio ao caos, apagando incêndios diários. Precisamos desenvolver uma nova ferramenta para auxiliar na gestão operacional do varejo, com informações relevantes para a tomada de decisão no dia a dia.</dd>
+                              <dd class="button"><a href="https://bit.ly/case-varejista" target="_blank">Conheça o projeto varejista</a></dd>
+                           </dl>
+                     </div>
                </div>
 
             <!--CASE 02 -->
                <div class="col">
-                     <article class="card rd-bg-white">
+                     <div class="card rd-bg-white">
                            <figure>
                               <img src="images/case-financeiro.webp" alt="A imagem mostra um quadro branco com vários post-its coloridos colados" width="854" height="480" loading="lazy">
                            </figure>
-                           <ul class="resume">
-                              <li><h3>Instituição financeira</h3></li>
-                              <li><p>Dificuldade em encontrar informações, múltiplos sistemas e informações duplicadas. O Banco apresentava uma visão fragmentada do cliente, o que dificultava o atendimento e a qualidade dos serviços prestados.</p></li>
-                              <li class="button"><a href="https://bit.ly/case-financeiro" target="_blank">Conheça o projeto financeiro</a></li>
-                           </ul>
-                     </article>
+                           <dl class="card-resume">
+                              <dt class="card-title">Instituição financeira</dt>
+                              <dd class="card-info">Dificuldade em encontrar informações, múltiplos sistemas e informações duplicadas. O Banco apresentava uma visão fragmentada do cliente, o que dificultava o atendimento e a qualidade dos serviços prestados.</dd>
+                              <dd class="button"><a href="https://bit.ly/case-financeiro" target="_blank">Conheça o projeto financeiro</a></dd>
+                           </dl>
+                     </div>
                </div>
 
             <!--CASE 03 -->
                <div class="col">
-                     <article class="card rd-bg-white">
+                     <div class="card rd-bg-white">
                            <figure>
                               <img src="images/case-ensino.webp" alt="A imagem mostra uma criança pequena, sentada no chão de um quarto de brinquedos." width="854" height="480" loading="lazy">
                            </figure>
-                           <ul class="resume">
-                              <li><h3>Instituição de ensino</h3></li>
-                              <li><p>Em meio a pandemia de Covid-19 uma instituição de ensino precisa se adaptar para um “novo normal”. Aulas 100% online. Trazer todo o conteúdo e principalmente manter o método de uma das principais escolas de inglês do Brasil.</p><li>
-                              <li class="button"><a href="https://bit.ly/case-ensino" target="_blank">Conheça o projeto de ensino</a></li>
-                        </ul>
-                     </article>
+                           <dl class="card-resume">
+                              <dt class="card-title">Instituição de ensino</dt>
+                              <dd class="card-info">Em meio a pandemia de Covid-19 uma instituição de ensino precisa se adaptar para um “novo normal”. Aulas 100% online. Trazer todo o conteúdo e principalmente manter o método de uma das principais escolas de inglês do Brasil.</dd>
+                              <dd class="button"><a href="https://bit.ly/case-ensino" target="_blank">Conheça o projeto de ensino</a></dd>
+                        </dl>
+                  </div>
                </div>
             
             <!--CASE 04 -->
                <div class="col">
-                     <article class="card rd-bg-white">
+                     <div class="card rd-bg-white">
                            <figure>
                               <img src="images/design-interface.webp" alt="A imagem mostra um monitor de computador antigo, do tipo CRT, sobre uma mesa." width="854" height="480" loading="lazy">
                            </figure>
-                           <ul class="resume">
-                              <li><h3>Dar vida as ideias</h3></li>
-                              <li><p>Design de interface e interação para tornar o caminho do usuário mais claro e garantir que a interface seja intuitiva e fácil de usar.</p></li>
-                              <li class="button"><a href="https://bit.ly/rd-ui" target="_blank">Conheça o projeto de interface</a></li>
-                           </ul>
-                     </article>
-               </div></a>
+                           <dl class="card-resume">
+                              <dt class="card-title">Dar vida as ideias</dt>
+                              <dd class="card-info">Design de interface e interação para tornar o caminho do usuário mais claro e garantir que a interface seja intuitiva e fácil de usar.</dd>
+                              <dd class="button"><a href="https://bit.ly/rd-ui" target="_blank">Conheça o projeto de interface</a></dd>
+                           </dl>
+                     </div>
+               </div>
 
-      </div>
+      </article>
    </main>
       
    <!--CONTACT -->
-   <nav class="contact rd-cover rd-bg-yellow">
-      <ul class="callme resume">
-         <li><h2>Bora conversar?</h2></li>
-         <li>
-            <img src="images/ico-cel.png" alt="Ilustração de um celular" width="32" height="32" loading="lazy">
-            <a href="https://wa.me/5511971712720" target="_blank">(11) 97171-2720</a>
-         </li>
-         <li>
-            <img src="images/ico-email.png" alt="Imagem escrita '@'" width="32" height="32" loading="lazy">
-            <a href="mailto:fale.rafael@gmail.com" target="_blank">fale.rafael@gmail.com</a>
-         </li>
-         <li>
-            <img src="images/ico-in.png" alt="Ilustração com logotipo do Linkedin" width="32" height="32" loading="lazy">
-            <a href="https://www.linkedin.com/in/rafael-santos-dizainer" target="_blank">Linkedin</a>
-         </li>
-         <li>
-            <img src="images/ico-cv.png" alt="Imagem de 3 folhas de curriculo sobrepostas" width="32" height="32" loading="lazy">
-            <a href="https://bit.ly/rd-cv-rafael-santos" target="_blank">Baixar currículo</a>
-         </li>
-      </ul>
-   </nav>
+   <section>
+      <div class="contact rd-cover rd-bg-yellow">
+            <ul class="callme card-resume">
+               <li><h2>Bora conversar?</h2></li>
+               <li>
+                  <img src="images/ico-cel.png" alt="Ilustração de um celular" width="32" height="32" loading="lazy">
+                  <a href="https://wa.me/5511971712720" target="_blank">(11) 97171-2720</a>
+               </li>
+               <li>
+                  <img src="images/ico-email.png" alt="Imagem escrita '@'" width="32" height="32" loading="lazy">
+                  <a href="mailto:fale.rafael@gmail.com" target="_blank">fale.rafael@gmail.com</a>
+               </li>
+               <li>
+                  <img src="images/ico-in.png" alt="Ilustração com logotipo do Linkedin" width="32" height="32" loading="lazy">
+                  <a href="https://www.linkedin.com/in/rafael-santos-dizainer" target="_blank">Linkedin</a>
+               </li>
+               <li>
+                  <img src="images/ico-cv.png" alt="Imagem de 3 folhas de curriculo sobrepostas" width="32" height="32" loading="lazy">
+                  <a href="https://bit.ly/rd-cv-rafael-santos" target="_blank">Baixar currículo</a>
+               </li>
+            </ul>
+         </div>
+   </section>
 
    <!--FOOTER -->
    <footer class="rd-black">
