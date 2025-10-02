@@ -108,7 +108,7 @@ footer {
   float: left;
   width: 50%;
   padding: var(--rd-r0);
-  height: inherit;
+  height: auto;
 }
 
 .container:after {
@@ -129,7 +129,7 @@ footer {
 }
 
 .card-info {
-  height: 7.5em;
+  height: 6.5em;
 }
 
 .card-title {
@@ -142,12 +142,13 @@ footer {
 }
 
 .card span {
-  font-size: medium;
   background-color: var(--rd-black);
   color: var(--rd-white);
   border-radius: var(--rd-r0);
   padding: var(--rd-r0);
-  line-height: var(--rd-r2);
+  line-height: var(--rd-r3);
+  white-space: nowrap
+
 }
 
 .case img {
