@@ -13,7 +13,7 @@ ul li {
 .header .logo,
 .rd-bg-white,
 .rd-bg-yellow {
-  color: var(--rd-black);
+  color: var(--rd-color1);
 }
 
 a,
@@ -21,7 +21,7 @@ a:active,
 a:focus,
 a:hover,
 a:visited {
-  color: var(--rd-black);
+  color: var(--rd-color1);
 }
 
 h2,
@@ -66,7 +66,7 @@ button {
 .button {
   padding: var(--rd-r1);
   display: inline-block;
-  background-color: var(--rd-yellow);
+  background-color: var(--rd-color2);
   border-radius: var(--rd-r0);
 }
 
@@ -90,11 +90,11 @@ footer {
 
 /*BACKGROUND*/
 .rd-bg-white {
-  background-color: var(--rd-white);
+  background-color: var(--rd-color3);
 }
 
 .rd-bg-black {
-  background-color: var(--rd-black);
+  background-color: var(--rd-color1);
 }
 
 /*LAYOUT*/
@@ -129,7 +129,7 @@ footer {
 }
 
 .card-info {
-  height: 6.5em;
+  height: 7.5em;
 }
 
 .card-title {
@@ -142,8 +142,8 @@ footer {
 }
 
 .card span {
-  background-color: var(--rd-black);
-  color: var(--rd-white);
+  background-color: var(--rd-color1);
+  color: var(--rd-color3);
   border-radius: var(--rd-r0);
   padding: var(--rd-r0);
   line-height: var(--rd-r3);
