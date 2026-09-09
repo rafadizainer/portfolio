@@ -300,9 +300,6 @@ footer {
 
 /* Responsividade Geral */
 @media (max-width: 768px) {
-  .container {
-    padding: 24px 16px 40px;
-  }
   .case-header {
     margin-bottom: 32px;
   }
