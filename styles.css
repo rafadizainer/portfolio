@@ -3,10 +3,11 @@
   --rd-color1: #090909;                               /* Preto */
   --rd-color2: #ffd60a;                               /* Amarelo */
   --rd-color3: #fffafa;                               /* Branco */
+  --rd-color4: #121212;                               /* Cinza Card */
   
   /* Cores de Fundo e Superfícies */
   --bg-primary: var(--rd-color1);                   /* Fundo principal profundo */
-  --bg-card: rgba(22, 22, 22, 0.75);                /* Variação 2: Superfície de cards com opacidade */
+  --bg-card: var(--rd-color4);                      /* Variação 2: Superfície de cards com opacidade */
   --bg-card-hover: rgba(35, 35, 35, 0.85);
   
   /* Bordas */
