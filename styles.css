@@ -5,9 +5,10 @@
   --rd-color3: #fffafa;                               /* Branco */
   --rd-color4: #121212;                               /* Cinza Card */
   
+  
   /* Cores de Fundo e Superfícies */
   --bg-primary: var(--rd-color1);                   /* Fundo principal profundo */
-  --bg-card: var(--rd-color4);                      /* Variação 2: Superfície de cards com opacidade */
+  --bg-card: var(--rd-color4);                      /* Variação 2: Superfície de cards */
   --bg-card-hover: rgba(35, 35, 35, 0.85);
   
   /* Bordas */
@@ -103,7 +104,7 @@ footer {
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 40px 24px 80px;
+  padding: 24px;
 }
 
 /* Navegação e Botões */
@@ -191,8 +192,6 @@ footer {
   }
 
 
-
-
 /* Grids Metadados */
 .meta-grid,
 .meta-box {
@@ -200,27 +199,9 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 16px;
   padding: 24px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 16px;
   margin-bottom: 48px;
 }
 
-.meta-item span,
-.meta-item h4 {
-  display: block;
-  font-size: 0.85rem;
-  margin-bottom: 4px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-weight: 400;
-}
-
-.meta-item strong,
-.meta-item p {
-  font-size: 1.05rem;
-  font-weight: 600;
-}
 
 /* Seções Principais */
 .section {
@@ -276,7 +257,6 @@ footer {
   border-radius: 16px;
   padding: 28px;
   margin-bottom: 24px;
-  backdrop-filter: blur(8px);
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
