@@ -4,6 +4,8 @@
   --rd-color2: #ffd60a;                               /* Amarelo */
   --rd-color3: #fffafa;                               /* Branco */
   --rd-color4: #121212;                               /* Cinza Card */
+  --rd-color5: #9d00ff;                               /* Roxo */
+
   
   
   /* Cores de Fundo e Superfícies */
@@ -23,7 +25,7 @@
 
 
   /* Tags e Badges */
-  --tag-bg: var(--rd-color2);
+  --tag-bg: var(--rd-color5);
   --tag-border: rgba(99, 102, 241, 0.3);
 
   /* Layout */
