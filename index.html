@@ -350,6 +350,22 @@ footer {
   }
 }
 
+
+@keyframes descendo {
+  from {
+    transform: translateY(5vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.desce {
+  animation: 0.5s ease-in 0s infinite alternate descendo;
+}
+
+
+
+
 /* ==========================================================================
    8. MEDIA QUERIES (DISPOSITIVOS MÓVEIS / TABLETS)
    ========================================================================== */
@@ -368,6 +384,7 @@ footer {
 
   .rd-cover {
     padding: var(--rd-r2);
+    height: auto;
   }
 
   .container {
@@ -425,7 +442,7 @@ footer {
         </figure>
         <h1>Olá, meu nome é Rafael Santos,</h1>
         <p>designer com mais de dez anos de experiência em produtos digitais, utilizando abordagens ágeis e design centrado no usuário. Atuo em todas as etapas do ciclo de vida do produto, desde a discovery até a implementação. Tenho experiência em planejamento estratégico e front-end, com foco na resolução de problemas.</p><br>
-        <p><span class="icon-arrow-down-circle" aria-hidden="true"></span></p>
+        <p class="desce"><span class="icon-arrow-down-circle" aria-hidden="true"></span></p>
       </div>
     </div>
 
