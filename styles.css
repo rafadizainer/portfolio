@@ -1,37 +1,40 @@
+/* ==========================================================================
+   1. VARIÁVEIS E CONFIGURAÇÕES GLOBAIS (DESIGN TOKENS)
+   ========================================================================== */
 :root {
- /* Padrão */
-  --rd-color1: #090909;                               /* Preto */
-  --rd-color2: #ffd60a;                               /* Amarelo */
-  --rd-color3: #fffafa;                               /* Branco */
-  --rd-color4: #121212;                               /* Cinza Card */
-  --rd-color5: #9d00ff;                               /* Roxo */
+  /* Cores Principais do Projeto */
+  --rd-color1: #090909;                               /* Preto Profundo */
+  --rd-color2: #ffd60a;                               /* Amarelo Solar */
+  --rd-color3: #fffafa;                               /* Branco Neve */
+  --rd-color4: #121212;                               /* Cinza Superfície / Card */
+  --rd-color5: #9d00ff;                               /* Roxo Accent */
 
-  
-  
-  /* Cores de Fundo e Superfícies */
-  --bg-primary: var(--rd-color1);                   /* Fundo principal profundo */
-  --bg-card: var(--rd-color4);                      /* Variação 2: Superfície de cards */
-  --bg-card-hover: rgba(35, 35, 35, 0.85);
-  
-  /* Bordas */
-  --border-color: rgba(255, 250, 250, 0.1);          /* Variação 1: Borda sutil de baixo contraste */
-  --border-hover: rgba(255, 250, 250, 0.22);         /* Variação 2: Borda ao passar o mouse */
-  --border-focus: var(--rd-color2);                  /* Variação 3: Borda de foco para navegabilidade acessível */
+  /* Mapeamento Semântico de Fundo e Superfícies */
+  --bg-primary: var(--rd-color1);                     /* Fundo principal da página */
+  --bg-card: var(--rd-color4);                        /* Superfície para elementos em card */
+  --bg-card-hover: rgba(35, 35, 35, 0.85);            /* Superfície interativa ao passar o mouse */
 
-  /* Tipografia */
-  --text-main: var(--rd-color3);                     /* Cor principal do texto (alto contraste) */
-  --text-subtitle: var(--rd-color2);                 /* Cor em destaque */
+  /* Mapeamento de Bordas */
+  --border-color: rgba(255, 250, 250, 0.1);          /* Borda sutil para divisores */
+  --border-hover: rgba(255, 250, 250, 0.22);         /* Borda de hover para cards/botões */
+  --border-focus: var(--rd-color2);                   /* Borda vibrante de foco (Acessibilidade) */
+
+  /* Tipografia e Textos */
+  --text-main: var(--rd-color3);                      /* Cor primária para textos */
+  --text-subtitle: var(--rd-color2);                  /* Cor de destaque para subtítulos/marcadores */
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 
+  /* Categorias e Badges */
+  --tag-bg: var(--rd-color5);                         /* Fundo padrão para tags */
+  --tag-border: rgba(99, 102, 241, 0.3);             /* Borda sutil de tags */
 
-  /* Tags e Badges */
-  --tag-bg: var(--rd-color5);
-  --tag-border: rgba(99, 102, 241, 0.3);
-
-  /* Layout */
+  /* Layout e Containers */
   --container-width: 960px;
 }
 
+/* ==========================================================================
+   2. RESET DE ESTILOS & REGRAS BASE
+   ========================================================================== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -46,24 +49,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Acessibilidade: Navegação por Teclado */
-a:focus-visible,
-button:focus-visible {
-  outline: 2px solid var(--border-focus);
-  outline-offset: 4px;
-}
-
-a {
-  text-decoration: none;
-  transition: color 0.2s ease, transform 0.2s ease;
-  color: var(--text-main);
-
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 p {
   margin-bottom: 16px;
 }
@@ -72,23 +57,54 @@ p:last-child {
   margin-bottom: 0;
 }
 
-/* Listas customizadas */
-ul.custom-list {
-  list-style-type: none;
-  padding-left: 0;
+/* ==========================================================================
+   3. ACESSIBILIDADE & LINKS INTERATIVOS
+   ========================================================================== */
+a {
+  color: var(--text-main);
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
-ul.custom-list li {
-  position: relative;
-  padding-left: 28px;
-  margin-bottom: 12px;
+a:hover {
+  text-decoration: underline;
 }
 
-ul.custom-list li::before {
-  content: "→";
-  position: absolute;
-  left: 0;
-  font-weight: 700;
+/* Anel visível de alta acessibilidade para navegação por teclado (WCAG) */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 4px;
+}
+
+/* ==========================================================================
+   4. ESTRUTURA E NAVEGAÇÃO (HEADER & LAYOUT)
+   ========================================================================== */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  background: rgba(13, 17, 23, 0.85);
+  border-bottom: 1px solid var(--border-color);
+  backdrop-filter: blur(8px);
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-btn {
+  font-size: small;
 }
 
 footer {
@@ -97,76 +113,11 @@ footer {
   text-align: center;
 }
 
-/* Formatação */
-.marker{
-   color: var(--text-subtitle);
-}
-
-/* Layout Container */
-.container {
-  max-width: var(--container-width);
-  margin: 0 auto;
-  padding: 24px;
-}
-
-/* Navegação e Botões */
-.site-header {
-  padding: 1.5rem 0;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid var(--border-color); 
-  background: rgba(13, 17, 23, 0.85); 
-  backdrop-filter: blur(8px); 
-  position: sticky; top: 0; 
-  z-index: 100; 
-  padding: 1rem 0;
-}
-
-.container{
-  padding-top: 0; 
-  padding-bottom: 0;
-}
-
-.back-btn{
-  font-size: small;
-}
-
-.nav-content{
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center;
-}
-
-/* Cabeçalho do Case (Hero) */
+/* ==========================================================================
+   5. SEÇÕES DE CONTEÚDO E HERO (CABEÇALHOS DO CASE)
+   ========================================================================== */
 .case-header {
   margin-bottom: 48px;
-}
-
-.tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1.25rem;
-}
-
-.badge,
-.tag {
-  display: inline-block;
-  padding: 6px 14px;
-  background: var(--tag-bg);
-  border-radius: 9999px;
-  color: var(--rd-color1);
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 16px;
-}
-
-.tag {
-  background: rgba(138, 99, 210, 0.15);
-  color: #c4b5fd;
-  border-color: rgba(138, 99, 210, 0.3);
-  margin-bottom: 0;
 }
 
 .case-title {
@@ -182,30 +133,18 @@ footer {
   margin-bottom: 32px;
 }
 
-/* Bnner Hero */
-  .banner-hero{
-    margin-bottom: 54px;
-  }
-
-  .banner-hero figure img{
-    border-radius: 16px;
-    width: 100%;
-    height: 100%;
-  }
-
-
-/* Grids Metadados */
-.meta-grid,
-.meta-box {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
-  padding: 24px;
-  margin-bottom: 48px;
+/* Banner de Destaque */
+.banner-hero {
+  margin-bottom: 54px;
 }
 
+.banner-hero figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
 
-/* Seções Principais */
+/* Configuração Geral de Seção */
 .section {
   margin-bottom: 56px;
   padding-bottom: 2rem;
@@ -225,12 +164,13 @@ footer {
   gap: 12px;
 }
 
+/* Indicador visual de destaque antes do título da seção */
 .section-title::before {
   content: "";
   display: inline-block;
   width: 4px;
   height: 24px;
-  background: var(--primary);
+  background: var(--border-focus);
   border-radius: 2px;
 }
 
@@ -240,19 +180,40 @@ footer {
   max-width: 850px;
 }
 
-/* Componente Card e Grids Gerais */
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
+/* ==========================================================================
+   6. COMPONENTES (BADGES, CARDS & LISTAS)
+   ========================================================================== */
+
+/* Badges e Tags */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
 }
 
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+.badge,
+.tag {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--tag-bg);
+  border-radius: 9999px;
+  color: var(--rd-color3);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
 }
 
+.tag {
+  background: rgba(138, 99, 210, 0.15);
+  color: #c4b5fd;
+  border-color: rgba(138, 99, 210, 0.3);
+  margin-bottom: 0;
+}
+
+/* Cards Interativos */
 .card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
@@ -279,15 +240,67 @@ footer {
   margin-bottom: 12px;
 }
 
+/* Listas Customizadas com Marcador */
+ul.custom-list {
+  list-style-type: none;
+  padding-left: 0;
+}
 
-/* Responsividade Geral */
+ul.custom-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+}
+
+ul.custom-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
+
+/* Utilitário de Texto em Destaque */
+.marker {
+  color: var(--text-subtitle);
+}
+
+/* ==========================================================================
+   7. SISTEMA DE GRIDS
+   ========================================================================== */
+.meta-grid,
+.meta-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 24px;
+  margin-bottom: 48px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* ==========================================================================
+   8. RESPONSIVIDADE (MEDIA QUERIES)
+   ========================================================================== */
 @media (max-width: 768px) {
   .case-header {
     margin-bottom: 32px;
   }
-  .meta-grid, .meta-box {
+
+  .meta-grid,
+  .meta-box {
     grid-template-columns: 1fr;
   }
+
   .contact-list {
     flex-direction: column;
     align-items: stretch;
