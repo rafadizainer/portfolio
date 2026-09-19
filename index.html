@@ -23,6 +23,7 @@
   --rd-color5: #9d00ff; /* Roxo */
 
   /* Espaçamentos e Medidas Escalares */
+  --rd-r4: 8rem;
   --rd-r3: 3rem;
   --rd-r2: 2rem;
   --rd-r1: 1rem;
@@ -398,13 +399,8 @@ footer {
     padding: 0;
   }
 
-  .card .card-resume {
-    padding-top: var(--rd-r2);
-    padding-bottom: var(--rd-r2);
-  }
-
   .card-resume {
-    padding: 0;
+    padding: var(--rd-r1);
   }
 
   .card-title {
@@ -423,6 +419,12 @@ footer {
   .case .col {
     padding-bottom: var(--rd-r1);
   }
+
+  .callme {
+    padding-top: var(--rd-r4);
+    padding-bottom: var(--rd-r4);
+  }
+
 }
  </style>
 
@@ -528,7 +530,7 @@ footer {
     </section>
 
     <section>
-      <div class="contact rd-cover rd-bg-2">
+      <div class="rd-cover rd-bg-2">
         <ul class="callme card-resume">
           <li>
             <h2 class="card-title">Bora conversar?</h2>
