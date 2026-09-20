@@ -9,6 +9,19 @@
   --rd-color4: #121212;                               /* Cinza Superfície / Card */
   --rd-color5: #9d00ff;                               /* Roxo Accent */
 
+  /* Espaçamentos e margens */
+  --rd-size-0: 0px;
+  --rd-size-8: 8px;
+  --rd-size-16: 16px;
+  --rd-size-24: 24px;
+  --rd-size-32: 32px;
+  --rd-size-48: 48px;
+  --rd-size-64: 64px;
+  --rd-size-360: 360px;
+  --rd-size-480: 480px;
+  --rd-size-768: 768px;
+  --rd-size-960: 960px;
+
   /* Mapeamento Semântico de Fundo e Superfícies */
   --bg-primary: var(--rd-color1);                     /* Fundo principal da página */
   --bg-card: var(--rd-color4);                        /* Superfície para elementos em card */
@@ -18,50 +31,47 @@
   --border-color: rgba(255, 250, 250, 0.1);          /* Borda sutil para divisores */
   --border-hover: rgba(255, 250, 250, 0.22);         /* Borda de hover para cards/botões */
   --border-focus: var(--rd-color2);                   /* Borda vibrante de foco (Acessibilidade) */
+  --border-radius: 16px;
+  --border-radius-round: 9999px;
 
   /* Tipografia e Textos */
-  --text-main: var(--rd-color3);                      /* Cor primária para textos */
-  --text-subtitle: var(--rd-color2);                  /* Cor de destaque para subtítulos/marcadores */
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 
   /* Categorias e Badges */
   --tag-bg: var(--rd-color5);                         /* Fundo padrão para tags */
   --tag-border: rgba(99, 102, 241, 0.3);             /* Borda sutil de tags */
 
-  /* Layout e Containers */
-  --container-width: 960px;
-}
 
 /* ==========================================================================
    2. RESET DE ESTILOS & REGRAS BASE
    ========================================================================== */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: var(--rd-size-0);
+  padding: var(--rd-size-0);
 }
 
 body {
   background-color: var(--bg-primary);
-  color: var(--text-main);
+  color: var(--rd-color3);
   font-family: var(--font-family);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
 p {
-  margin-bottom: 16px;
+  margin-bottom: var(--rd-size-16);
 }
 
 p:last-child {
-  margin-bottom: 0;
+  margin-bottom: var(--rd-size-0);
 }
 
 /* ==========================================================================
    3. ACESSIBILIDADE & LINKS INTERATIVOS
    ========================================================================== */
 a {
-  color: var(--text-main);
+  color: var(--rd-color3);
   text-decoration: none;
   transition: color 0.2s ease, transform 0.2s ease;
 }
@@ -81,17 +91,16 @@ button:focus-visible {
    4. ESTRUTURA E NAVEGAÇÃO (HEADER & LAYOUT)
    ========================================================================== */
 .container {
-  max-width: var(--container-width);
+  max-width: var(--rd-size-960);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: var(--rd-size-24);
 }
 
 .site-header {
   position: sticky;
   top: 0;
   z-index: 100;
-  padding: 1rem 0;
-  margin-bottom: 2rem;
+  margin-bottom: var(--rd-size-32);
   background: rgba(13, 17, 23, 0.85);
   border-bottom: 1px solid var(--border-color);
   backdrop-filter: blur(8px);
@@ -109,7 +118,7 @@ button:focus-visible {
 
 footer {
   background: var(--bg-card);
-  padding: 2rem;
+  padding:var(--rd-size-32);
   text-align: center;
 }
 
@@ -117,37 +126,36 @@ footer {
    5. SEÇÕES DE CONTEÚDO E HERO (CABEÇALHOS DO CASE)
    ========================================================================== */
 .case-header {
-  margin-bottom: 48px;
+  margin-bottom: var(--rd-size-48);
 }
 
 .case-title {
-  font-size: clamp(2.2rem, 5vw, 2.75rem);
+  font-size: xxx-large;
   font-weight: 800;
-  line-height: 1.15;
-  margin-bottom: 16px;
+  margin-bottom: var(--rd-size-16);
 }
 
 .case-subtitle {
-  font-size: 1.25rem;
-  max-width: 750px;
-  margin-bottom: 32px;
+  font-size: large;
+  max-width: var(--rd-size-768);
+  margin-bottom: var(--rd-size-32);
 }
 
 /* Banner de Destaque */
 .banner-hero {
-  margin-bottom: 54px;
+  margin-bottom: var(--rd-size-48);
 }
 
 .banner-hero figure img {
   width: 100%;
   height: 100%;
-  border-radius: 16px;
+  border-radius: var(--border-radius);
 }
 
 /* Configuração Geral de Seção */
 .section {
-  margin-bottom: 56px;
-  padding-bottom: 2rem;
+  margin-bottom: var(--rd-size-64);
+  padding-bottom: var(--rd-size-32);
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -156,12 +164,12 @@ footer {
 }
 
 .section-title {
-  font-size: 1.75rem;
-  font-weight: 700;
-  margin-bottom: 20px;
+  font-size: xx-large;
+  font-weight: 800;
+  margin-bottom:  var(--rd-size-24);
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: var(--rd-size-16);
 }
 
 /* Indicador visual de destaque antes do título da seção */
@@ -169,15 +177,15 @@ footer {
   content: "";
   display: inline-block;
   width: 4px;
-  height: 24px;
+  height: var(--rd-size-24);
   background: var(--border-focus);
-  border-radius: 2px;
+  border-radius: var(--border-radius);
 }
 
 .section-lead {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  max-width: 850px;
+  font-size xx-large;
+  margin-bottom: var(--rd-size-32);
+  max-width: var(--rd-size-768);
 }
 
 /* ==========================================================================
@@ -188,8 +196,8 @@ footer {
 .tag-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1.25rem;
+  gap: var(--rd-size-16);
+  margin-bottom: var(--rd-size-32);
 }
 
 .badge,
@@ -197,47 +205,40 @@ footer {
   display: inline-block;
   padding: 6px 14px;
   background: var(--tag-bg);
-  border-radius: 9999px;
+  border-radius: var(--border-radius-round);
   color: var(--rd-color3);
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: small;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 16px;
+  margin-bottom: var(rd-size-16);
 }
 
-.tag {
-  background: rgba(138, 99, 210, 0.15);
-  color: #c4b5fd;
-  border-color: rgba(138, 99, 210, 0.3);
-  margin-bottom: 0;
-}
 
 /* Cards Interativos */
 .card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 16px;
-  padding: 28px;
-  margin-bottom: 24px;
+  border-radius: var(--border-radius);
+  padding: var(--rd-size-24);
+  margin-bottom: var(--rd-size-24);
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-.card:hover {
+.card:hover{
   transform: translateY(-2px);
-  border-color: #484f58;
+  border-color: var(--border-hover);
 }
 
 .card-icon {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+  font-size: x-large;
+  margin-bottom: var(--rd-size-32);
   display: inline-block;
 }
 
 .card h3 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 12px;
+  font-size: large;
+  font-weight: 800;
+  margin-bottom: var(--rd-size-16);
 }
 
 /* Listas Customizadas com Marcador */
@@ -248,20 +249,20 @@ ul.custom-list {
 
 ul.custom-list li {
   position: relative;
-  padding-left: 28px;
-  margin-bottom: 12px;
+  padding-left: var(--rd-size-24);
+  margin-bottom: var(--rd-size-16);
 }
 
 ul.custom-list li::before {
   content: "→";
   position: absolute;
   left: 0;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /* Utilitário de Texto em Destaque */
 .marker {
-  color: var(--text-subtitle);
+  color: var(--rd-color2);
 }
 
 /* ==========================================================================
@@ -271,21 +272,21 @@ ul.custom-list li::before {
 .meta-box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
-  padding: 24px;
-  margin-bottom: 48px;
+  gap: var(--rd-size-16);
+  padding: var(--rd-size-24);
+  margin-bottom: var(--rd-size-48);
 }
 
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
+  gap: var(--rd-size-24);
 }
 
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+  gap: var(--rd-size-24);
 }
 
 /* ==========================================================================
@@ -293,7 +294,15 @@ ul.custom-list li::before {
    ========================================================================== */
 @media (max-width: 768px) {
   .case-header {
-    margin-bottom: 32px;
+    margin-bottom: var(--rd-size-32);
+  }
+
+  .case-title{
+    font-size: xx-large;
+  }
+
+  .section-title{
+    font-size: x-large;
   }
 
   .meta-grid,
@@ -305,4 +314,11 @@ ul.custom-list li::before {
     flex-direction: column;
     align-items: stretch;
   }
+
+.projeto{
+   margin-bottom: var(--rd-size-0);
+  }
+
+
+
 }
